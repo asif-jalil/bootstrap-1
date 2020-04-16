@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice Template</title>
+
+    <!-- All css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- top bar -->
+
+    <div class="row bg-dark text-white py-1 px-5">
+        <div class="col-6">
+            <span class="">Phone: 01719836117</span>
+            <span class="ml-4">Email: admin@example.com</span>
+        </div>
+        <div class="col-6">
+            <div class="float-right">
+                <a href="#" class="text-white text-decoration-none border-right px-3">Dashboard</a>
+                <a href="#" class="text-white text-decoration-none border-right px-3">Message <span
+                        class="badge badge-primary">3</span></a>
+                <a href="#" class="text-white text-decoration-none pl-3">Notification <span
+                        class="badge badge-primary">9+</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <header class="navbar navbar-expand-lg sticky-top navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#"><img src="img/logo-white.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav mr-auto ml-5">
+                <li class="nav-item active px-3">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  px-3">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item  px-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Service
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#web">Web Design</a>
+                        <a class="dropdown-item" href="#graphics">Graphics Design</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#marketing">Digital Marketing</a>
+                        <a class="dropdown-item" href="#seo">SEO</a>
+                    </div>
+                </li>
+                <li class="nav-item  px-3">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item  px-3">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item  px-3">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input class="form-control" type="search" name="search" placeholder="Search....."
+                        aria-label="Recipient's " aria-describedby="my-addon">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="button-addon1">Search</button>
+                    </div>
+                </div>
+            </form>
+        </nav>
+    </header>
+
+    <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1"></li>
+            <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/background-image-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Stay Home, Stay Safe</h5>
+                    <p>Don't go outside form home. It's your responsibility</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/background-image-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Wash Your Hands</h5>
+                    <p>Wash your hands minimum 10 times a day. You will be safe.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/background-image-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Get more vitamin C</h5>
+                    <p>Vitamin C Will Increase Your Immunity System.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section id="about">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="media">
+                    <img src="img/group image-2.jpg" class="mr-3 rounded" alt="...">
+                    <div class=" media-body">
+                        <h1 class="mt-0">About Us</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate nobis quam maxime?
+                            Possimus
+                            totam ea nostrum quo porro aliquam ut odit expedita explicabo, doloremque dolorum labore
+                            tempore
+                            quos culpa nesciunt aspernatur enim. Nam libero ipsum, vero fuga, numquam, voluptate velit
+                            commodi laborum esse vel voluptatibus dolorum maxime vitae facere quo est? Mollitia, est
+                            nostrum
+                            dolore molestias ullam blanditiis tenetur ex nihil quia quidem cumque beatae, impedit
+                        </p>
+
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                erat a
+                                ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web" class="my-5">
+        <div id="graphics"></div>
+        <div id="marketing"></div>
+        <div class="container">
+            <h1 class="text-center mb-5">Service</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/icon/coustomer-service-logo.png" class="card-img mx-auto d-block mt-3" alt="..."
+                            style="width: 70px; height: 70px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Web Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/icon/tour-guide.png" class="card-img mx-auto d-block mt-3" alt="..."
+                            style="width: 70px; height: 70px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Graphics Design</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/icon/img_343964.png" class="card-img mx-auto d-block mt-3" alt="..."
+                            style="width: 70px; height: 70px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Digital Marketing</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog section -->
+
+    <section class="my-5" id="blog">
+        <div class="container">
+            <h1 class="text-center mb-5">Blog</h1>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/portfolio/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hello world</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/portfolio/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Safe from Corona</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+                                nemo voluptates enim.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/portfolio/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 5 website</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination my-5 justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item  active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+
+    <section class="my-5" id="contact">
+        <div class="container">
+            <h1 class="text-center mb-5">Contact</h1>
+            <div class="row">
+                <div class="col-6 bg-light p-5">
+                    <h4 class="my-5">Contact Form</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="name" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <input id="message" class="form-control" type="text" name="" style="height:150px">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-6 alert-info p-5">
+                    <h4 class="my-5">Contact Informaion</h4>
+                    <h6 class="d-block my-3"><img src="img/icon/phone-icon.png" alt="" height="20px" width="20px">
+                        Phone: 01719836117</h6>
+                    <h6 class="d-block my-3"><img src="img/icon/mail-icon.png" alt="" height="20px" width="20px"> Email:
+                        admin@example.com</h6>
+                    <h6 class="d-block my-3"><img src="img/icon/location-icon.png" alt="" height="20px" width="20px">
+                        Location: Bangladesh</h6>
+                    <h5 class="d-block mt-5 mb-3">Social Profile:</h5>
+                    <a href="#" class="text-dark mr-2"><i class="fa fa-facebook-f"></i></a> <a href="#"
+                        class="text-dark mx-2"><i class="fa fa-twitter"></i></a> <a href="#" class="text-dark mx-2"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section end -->
+
+
+    <!-- FAQ section start -->
+
+    <section class="my-5" id="faq">
+        <div class="container">
+            <h1 class="text-center mb-5">FAQ</h1>
+            <div class="row">
+                <div class="col-6">
+                    <div class="accordion" id="accordionLeft">
+                        <div class="card">
+                            <a class="card-header btn text-left" id="headOne" data-toggle="collapse"
+                                href="#accordionOne" role="button" aria-expanded="false" aria-controls="accordionOne">
+                                What is your privacy policy? #1
+                            </a>
+                            <div class="collapse show" id="accordionOne" aria-labelledby="headOne"
+                                data-parent="#accordionLeft">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque
+                                        veritatis provident
+                                        quisquam ab eos incidunt accusamus, maxime culpa. Aliquid quidem ipsam saepe.
+                                        Quam illum
+                                        perferendis, sed labore rerum natus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headTwo">
+                                <button type="button" class="btn collapsed" data-toggle="collapse"
+                                    data-target="#accordionTwo" aria-expanded="false" aria-controls="accordionOne">
+                                    What is your privacy policy? #2
+                                </button>
+                            </div>
+                            <div class="collapse" id="accordionTwo" aria-labelledby="headTwo"
+                                data-parent="#accordionLeft">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque
+                                        veritatis provident
+                                        quisquam ab eos incidunt accusamus, maxime culpa. Aliquid quidem ipsam saepe.
+                                        Quam illum
+                                        perferendis, sed labore rerum natus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headThree">
+                                <button type="button" class="btn collapsed" data-toggle="collapse"
+                                    data-target="#accordionThree" aria-expanded="false" aria-controls="accordionOne">
+                                    What is your privacy policy? #3
+                                </button>
+                            </div>
+                            <div class="collapse" id="accordionThree" aria-labelledby="headThree"
+                                data-parent="#accordionLeft">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque
+                                        veritatis provident
+                                        quisquam ab eos incidunt accusamus, maxime culpa. Aliquid quidem ipsam saepe.
+                                        Quam illum
+                                        perferendis, sed labore rerum natus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="accordion" id="accordionRight">
+                        <div class="card">
+                            <a class="card-header btn text-left" id="headFour" data-toggle="collapse"
+                                href="#accordionFour" role="button" aria-expanded="false" aria-controls="accordionFour">
+                                What is your privacy policy? #4
+                            </a>
+                            <div class="collapse show" id="accordionFour" aria-labelledby="headFour"
+                                data-parent="#accordionRight">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque
+                                        veritatis provident
+                                        quisquam ab eos incidunt accusamus, maxime culpa. Aliquid quidem ipsam saepe.
+                                        Quam illum
+                                        perferendis, sed labore rerum natus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headTwo">
+                                <button type="button" class="btn collapsed" data-toggle="collapse"
+                                    data-target="#accordionFive" aria-expanded="false" aria-controls="accordionFive">
+                                    What is your privacy policy? #5
+                                </button>
+                            </div>
+                            <div class="collapse" id="accordionFive" aria-labelledby="headFive"
+                                data-parent="#accordionRight">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque
+                                        veritatis provident
+                                        quisquam ab eos incidunt accusamus, maxime culpa. Aliquid quidem ipsam saepe.
+                                        Quam illum
+                                        perferendis, sed labore rerum natus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headSix">
+                                <button type="button" class="btn collapsed" data-toggle="collapse"
+                                    data-target="#accordionSix" aria-expanded="false" aria-controls="accordionSix">
+                                    What is your privacy policy? #6
+                                </button>
+                            </div>
+                            <div class="collapse" id="accordionSix" aria-labelledby="headSix"
+                                data-parent="#accordionRight">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque
+                                        veritatis provident
+                                        quisquam ab eos incidunt accusamus, maxime culpa. Aliquid quidem ipsam saepe.
+                                        Quam illum
+                                        perferendis, sed labore rerum natus.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq section end -->
+
+
+
+
+    <script src=" js/jquery-3.4.1.min.js"> </script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
